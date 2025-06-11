@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  color: white;
+}
+
+#main {
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: url(mobile-bg.avif);
+  position: relative;
+  padding: 10px;
+  font-size: clamp(16px, 1vw, 20px);
+}
+#main h1 {
+  color: #111;
+  font-size: 1rem;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  display: flex;
+  text-wrap: nowrap;
+}
+#main h1 #oneSpan {
+  display: inline-block;
+  height: 1.8em;
+  margin-left: 5px;
+  border-radius: 25px;
+  width: 2.2em;
+  background-image: url(bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+#main h6 {
+  color: rgb(23, 37, 49);
+  line-height: 4vw;
+  margin-top: 0.5em;
+  font-weight: 400;
+  font-size: 0.88rem;
+}
+#main form {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  gap: 3vw;
+  justify-content: center;
+  width: 100%;
+  align-items: center;
+  display: flex;
+}
+#main form input {
+  border-radius: 13px;
+  height: 5vh;
+  padding: 0 7px;
+  width: 50%;
+}
+#main form button {
+  border-radius: 13px;
+  height: 5vh;
+  white-space: nowrap;
+  padding: 0 7px;
+  width: -moz-fit-content;
+  width: fit-content;
+  cursor: pointer;
+}
+#main .card {
+  width: 100%;
+  background: rgba(255, 255, 255, 0.1); /* semi-transparent */
+  backdrop-filter: blur(10px); /* frosted blur effect */
+  -webkit-backdrop-filter: blur(10px); /* Safari support */
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 30px;
+  height: 70%;
+  padding: 10px 15px;
+}
+#main .card #userImage {
+  border-radius: 17px;
+  -o-object-position: center;
+     object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 1px solid black;
+  background-position: center;
+  background-size: cover;
+  border-radius: 50%;
+  height: 20vw;
+  width: 20vw;
+}
+
+#main::-webkit-scrollbar {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  #main {
+    background-position: bottom;
+    background-size: cover;
+    padding: 30px;
+    background-image: url(desktop-bg.avif);
+  }
+  #main h1 {
+    font-weight: 500;
+    font-size: 1.55rem;
+  }
+  #main h1 #onespan {
+    height: 5vh;
+    width: 3rem;
+    background-image: url(bluegirl.jpg);
+    background-size: cover;
+  }
+  #main h6 {
+    font-size: 1.35rem;
+    line-height: -10vw;
+  }
+  #main form {
+    gap: 2vw;
+  }
+  #main form input {
+    width: 40%;
+    height: 3vw;
+  }
+  #main form button {
+    height: 3vw;
+    padding: 0 10px;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  #main .card #userImage {
+    height: 12rem;
+    width: 12rem;
+    background-color: transparent;
+  }
+}
