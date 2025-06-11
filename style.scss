@@ -18,7 +18,7 @@ body {
   background-size: cover;
   background-position: center;
   // margin: 3vw 0;
-  background-image: url(mobile-bg.avif);
+  background-image: url(photos/mobile-bg.avif);
   position: relative;
   padding: 10px;
 
@@ -45,7 +45,7 @@ body {
       margin-left: 5px;
       border-radius: 25px;
       width: 2.2em;
-      background-image: url(bg.jpg);
+      background-image: url(photos/bg.jpg);
       background-size: cover;
       background-position: center;
     }
@@ -117,18 +117,15 @@ body {
     background-position: bottom;
     background-size: cover;
     padding: 30px;
-    background-image: url(desktop-bg.avif);
+    background-image: url(photos/desktop-bg.avif);
 
     h1 {
       font-weight: 500;
       font-size: 1.55rem;
-      //   background-color: red; 
       #onespan {
         height: 5vh;
         width: 3rem;
-        background-image: url(bluegirl.jpg);
         background-size: cover;
-        // background-position: 50% 10%;
       }
     }
     h6 {
